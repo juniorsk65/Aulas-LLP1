@@ -62,7 +62,7 @@ int main()
         votos_por_jogador_ordenado[numero_jogador -1] ++;
     }
 
-    cout <<"Foram computados %d votos.\n", total_votos;
+    cout <<"Foram computados " << total_votos << " votos.\n";
     cout <<"Jogador\tVotos \t \% \n";
     for(i = 0; i<23; i++){
         if(votos_por_jogador[i] != 0){
@@ -76,23 +76,26 @@ int main()
 
 
 
-        int aux;
-        int tamanho = 23;
-        for(j=tamanho-1; j<=1; j--){
-            for(i=0; i>j; i++){
-                if(votos_por_jogador_ordenado[i] > votos_por_jogador_ordenado[i+1]){
-                    aux=votos_por_jogador_ordenado[i];
-                    votos_por_jogador_ordenado[i]=votos_por_jogador_ordenado[i+1];
-                    votos_por_jogador_ordenado[i+1]=aux;
-                }
+     /*
+    criar um array auxiliar ordenado, capturar o maior valor e pesquisar a posição no array original, armazenar esse valor
+    e fazer com que ele mostre
+    */
+    int aux;
+    int tamanho = 23;
+    for(j=tamanho-1; j<=1; j--){
+        for(i=0; i>j; i++){
+            if(votos_por_jogador_ordenado[i] > votos_por_jogador_ordenado[i+1]){
+                aux=votos_por_jogador_ordenado[i];
+                votos_por_jogador_ordenado[i]=votos_por_jogador_ordenado[i+1];
+                votos_por_jogador_ordenado[i+1]=aux;
             }
         }
+    }
 
+    for(i = 0; i>j; i++){
+        cin >> votos_por_jogador_ordenado[i];
+    }
 
-    /*
-    criar um array auxiliar ordenado, capturar o maior valor e pesquisar a posição no array original
-
-    */
     cin >> votos_por_jogador_ordenado[22];
     //cout << " melhor jogador foi o número %d, com %d votos,\
             correspondendo a %.1f% do total de votos.", melhor_jogador, );
