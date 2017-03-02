@@ -20,11 +20,6 @@
         Condição 0 = end
 */
 
-
-
-
-
-
 //Bibliotecas
 #include <iostream>
 //#include <stdio.h>      /* printf, NULL */
@@ -37,6 +32,18 @@ int main()
 {
     srand(time(NULL));
     cout << rand() % 50;
+
+    int numero_vezes = 0;
+
+
+    do{
+
+
+
+    }while();
+
+
+
 
 
     return 0;
