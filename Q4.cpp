@@ -1,5 +1,6 @@
 /*******
- * Nome:
+ * Nome:Lucas Nogueira Nobrega
+ *      Luciano Junior
  * Data:
  *
  * Resumo do código:
@@ -14,9 +15,9 @@
 #include <iostream>
 #include <iomanip>      // formatação do número decimal
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string.h>
 
 using namespace std;
 
@@ -31,14 +32,13 @@ float CalculaPorcentual(int numero_de_votos, int total_de_votos){
 
 int main()
 {
-    //DIGITE O CÓDIGO AQUI!
     int numero_jogador = 10;
     int total_votos = 0;
     int votos_por_jogador[23] = {0};//Lembrando que o index é de 0 a 22
-    int votos_por_jogador_ordenado[23] = {0};
     int i = 0, j = 0;
 
     cout <<"Enquete: Quem foi o melhor jogador?\n\n";
+    //LOOP para a entrada dos jogadores
     while(numero_jogador != 0){
         cout <<"Número do jogador (0=fim): ";
         cin >> numero_jogador;
@@ -55,13 +55,12 @@ int main()
             cout <<"Informe um valor entre 1 e 23 ou 0 para sair! \n \n";
             continue;
         }
-
-
         total_votos ++;
         votos_por_jogador[numero_jogador - 1] ++;
-        votos_por_jogador_ordenado[numero_jogador -1] ++;
     }
+    //FIM DO LOOP
 
+    //Imprime na tela os jogadores votados
     cout <<"Foram computados " << total_votos << " votos.\n";
     cout <<"Jogador\tVotos \t \% \n";
     for(i = 0; i<23; i++){
@@ -73,32 +72,31 @@ int main()
             cout << setw(1) << CalculaPorcentual(votos_por_jogador[i], total_votos) << "\n";
         }
     }
-
+    //FIM Imprime na tela os jogadores votados
 
 
      /*
-    criar um array auxiliar ordenado, capturar o maior valor e pesquisar a posição no array original, armazenar esse valor
-    e fazer com que ele mostre
+    Captura o maior valor a posição no array original, armazena esse valor em maior_valor e index_maior_valor
     */
-    int aux;
-    int tamanho = 23;
-    for(j=tamanho-1; j<=1; j--){
-        for(i=0; i>j; i++){
-            if(votos_por_jogador_ordenado[i] > votos_por_jogador_ordenado[i+1]){
-                aux=votos_por_jogador_ordenado[i];
-                votos_por_jogador_ordenado[i]=votos_por_jogador_ordenado[i+1];
-                votos_por_jogador_ordenado[i+1]=aux;
-            }
+    int maior_valor = 0;
+    int index_maior_valor = 0;
+    for(i = 0;i<23; i++){
+        if(votos_por_jogador[i]>maior_valor){
+            maior_valor  = votos_por_jogador[i];
+            index_maior_valor = i;
         }
     }
 
-    for(i = 0; i>j; i++){
-        cin >> votos_por_jogador_ordenado[i];
+    /*
+    for(i = 0; i<23; i++){
+        cout << votos_por_jogador[i] << " ";
     }
+    Somente para Debugging
+    */
 
-    cin >> votos_por_jogador_ordenado[22];
-    //cout << " melhor jogador foi o número %d, com %d votos,\
-            correspondendo a %.1f% do total de votos.", melhor_jogador, );
+
+    cout << "\nO melhor jogador foi o número " << (index_maior_valor + 1) << ", com "<< maior_valor << " votos," <<
+            "correspondendo a "<< CalculaPorcentual(votos_por_jogador[index_maior_valor], total_votos) <<"\% do total de votos.\n";
 
 
 
