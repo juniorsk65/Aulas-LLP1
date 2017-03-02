@@ -62,11 +62,11 @@ int main()
 
     //Imprime na tela os jogadores votados
     cout <<"Foram computados " << total_votos << " votos.\n";
-    cout <<"Jogador\tVotos \t \% \n";
+    cout <<"Jogador\t Votos \t \% \n";
     for(i = 0; i<23; i++){
         if(votos_por_jogador[i] != 0){
-            cout << (i + 1) << "\t";
-            cout << votos_por_jogador[i] << "\t" ;
+            cout << (i + 1) << "\t ";
+            cout << votos_por_jogador[i] << "\t " ;
             //Formatação do Número decimal
             cout.precision(4);
             cout << setw(1) << CalculaPorcentual(votos_por_jogador[i], total_votos) << "\n";
