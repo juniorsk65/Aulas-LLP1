@@ -14,7 +14,7 @@
 /*
     Tem:
         Do while
-        simula n de jogadas
+            simula n de jogadas
         Criar uma função com:
             imprime o percentual valor/n de jogadas
         Condição 0 = end
@@ -30,22 +30,25 @@ using namespace std;
 
 int main()
 {
+    //Configura a semente do número aleatório
     srand(time(NULL));
-    cout << rand() % 50;
 
     int numero_vezes = 0;
+    int i = 0;
+    int quantidade_cada_valor[5] = {0};
 
+    cout << "Digite o número de vezes que o dado de 6 faces será lançado:";
+    cin >> numero_vezes;
 
-    do{
+    while(i < numero_vezes){
+        cout << "O resultado da jogada nº " << (i + 1) <<" é: " << ((rand() % 6) + 1) << endl;
+        i++;
+    }
+    /*
+    A lista está organizada com o index relacionado com a face do dado.
+    resultado = index ++
 
-
-
-    }while();
-
-
-
-
-
+    */
     return 0;
 }
 
