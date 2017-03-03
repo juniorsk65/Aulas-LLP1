@@ -16,14 +16,14 @@
 //#include <stdio.h>      /* printf, NULL */
 #include <stdlib.h>     // srand, rand
 #include <iomanip>      // formatação do número decimal
-
 //#include <time.h>
+
 
 using namespace std;
 
-float CalculaPorcentual(int numero_de_votos, int total_de_votos){
+float CalculaPorcentual(int numero_de_vezes, int total_de_vezes){
     float porcentagem = 0.0;
-    porcentagem = (float) numero_de_votos/(float) total_de_votos;
+    porcentagem = (float) numero_de_vezes/(float) total_de_vezes;
     return porcentagem*100;
 }
 
@@ -36,7 +36,7 @@ int main()
 
     while(numero_vezes != 0){
         int i = 0;
-        int quantidade_cada_valor[5] = {0};
+        int quantidade_cada_valor[6] = {0};
         int numero_aleatorio = 0;
 
 
@@ -56,8 +56,9 @@ int main()
         }
 
         cout << "A porcentagem de cada face jogada é:" << endl;
+        cout << "Face\t" << "Vezes\t" << " \%" << endl;
 
-        for(i = 0; i<6; i++){
+        for(i = 0; i< 6; i++){
             if(quantidade_cada_valor[i] != 0){
                 cout << (i + 1) << "\t ";
                 cout << quantidade_cada_valor[i] << "\t " ;
