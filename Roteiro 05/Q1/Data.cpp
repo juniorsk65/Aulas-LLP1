@@ -17,46 +17,83 @@ Data e utiliza as suas operações (métodos).
 
 // Biliotecas
 #include <iostream>
-#include "Data.h"
 
-Data::Data()
+class Data
 {
-    //ctor
+    private:
+        int dia;
+        int mes;
+        int ano;
+
+    public:
+        Data(int D, int M , int A);
+        //~Data();
+
+        bool setDia(int D);
+        bool setMes(int M);
+        bool setAno(int A);
+
+        int getDia();
+        int getMes();
+        int getAno();
+};
+
+Data::Data(int D, int M , int A)
+{
+    if(0 < D < 31){
+        dia = D;
+    }
+    if(0 < M < 12){
+        mes = M;
+    }
+    if(0 < A < 32000){
+        ano = A;
+    }
 }
 
-Data::~Data()
-{
-    //dtor
+
+int Data::getDia(){return dia;}
+
+int Data::getMes(){return mes;}
+
+int Data::getAno(){return ano;}
+
+bool Data::setDia(int D){
+    if(0 < D < 31){
+        dia = D;
+        return 0;
+        return 0;
+    }
+    return 1;
 }
 
-
-Data::getDia()
-{
-    //dtor
+bool Data::setMes(int M){
+    if(0 < M < 12){
+        mes = M;
+        return 0;
+    }
+    return 1;
 }
 
-
-Data::getMes()
-{
-    //dtor
+bool Data::setAno(int A){
+    if(0 < A < 32000){
+        ano = A;
+        return 0;
+    }
+    return 1;
 }
-
-Data::getAno(){}
-
-bool Data::setDia(){}
-bool Data::setMes(){}
-bool Data::setAno(){}
-
-
-
-
-
-
 
 
 
 int main()
 {
+    Data niver(22,31211,1996);
+
+    std::cout << niver.getDia();
+    std::cout << niver.getMes();
+
+
+
 
 
 	return 0;
