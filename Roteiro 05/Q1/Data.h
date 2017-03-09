@@ -5,21 +5,23 @@
 class Data
 {
     private:
-        int data;
+        int dia;
         int mes;
         int ano;
 
     public:
         Data();
-        ~Data();
+        Data(int D, int M , int A);
+        //~Data();
+        bool avancarDia();
 
-        bool setData();
-        bool setMes();
-        bool setAno();
+        bool setDia(int D);
+        bool setMes(int M);
+        bool setAno(int A);
 
-        bool getDia();
-        bool getMes();
-        bool getAno();
+        int getDia();
+        int getMes();
+        int getAno();
 };
 
 #endif // DATA_H

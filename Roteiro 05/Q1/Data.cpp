@@ -12,41 +12,45 @@
     (b) Crie uma classe DataTest, com um método main, que cria alguns objetos da classe
 Data e utiliza as suas operações (métodos).
  *
+ * Os todos os meses possuem 31 dias.
  *
  */
 
 // Biliotecas
 #include <iostream>
+#include "Data.h"
 
-class Data
+using namespace std;
+
+Data::Data()
 {
-    private:
-        int dia;
-        int mes;
-        int ano;
+    //nada;
+}
 
-    public:
-        Data(int D, int M , int A);
-        //~Data();
+bool Data::avancarDia()
+{
+    dia++;
+    if(dia == 32){
+        dia = 1;
+        mes++;
+        if (mes == 13){
+            mes = 1;
+            ano++;
+        }
+    }
 
-        bool setDia(int D);
-        bool setMes(int M);
-        bool setAno(int A);
+}
 
-        int getDia();
-        int getMes();
-        int getAno();
-};
 
 Data::Data(int D, int M , int A)
 {
-    if(0 < D < 31){
+    if(1 <= D  && D <= 31){
         dia = D;
     }
-    if(0 < M < 12){
+    if(1 <= M  && M <= 12){
         mes = M;
     }
-    if(0 < A < 32000){
+    if(1 <= A && A <= 32000){
         ano = A;
     }
 }
@@ -83,14 +87,17 @@ bool Data::setAno(int A){
     return 1;
 }
 
-
-
 int main()
 {
-    Data niver(22,31211,1996);
+    Data niver(1,12,1999);
 
-    std::cout << niver.getDia();
-    std::cout << niver.getMes();
+    cout << endl;
+    cout << niver.getMes()<<endl<<endl;
+    niver.avancarDia();
+    cout << niver.getDia()<<endl;
+    cout << niver.getMes()<<endl;
+    cout << niver.getAno()<<endl;
+
 
 
 
