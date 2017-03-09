@@ -1,6 +1,7 @@
-/*
- * Nome   :
- * Data   :
+/**
+ * Nome   : Lucas Nogueira Nobrega E Luciano Vieira da Silva Junior
+
+ * Data   : 9/03/17
  *
  * Resumo do Codigo:
  1) (a) Crie uma classe chamada Data para representar uma data. Essa classe deve conter três
@@ -19,15 +20,11 @@ Data e utiliza as suas operações (métodos).
 // Biliotecas
 #include <iostream>
 #include "Data.h"
+#include "DataTest.h"
 
 using namespace std;
 
-Data::Data()
-{
-    //nada;
-}
-
-bool Data::avancarDia()
+void Data::avancarDia()
 {
     dia++;
     if(dia == 32){
@@ -41,20 +38,12 @@ bool Data::avancarDia()
 
 }
 
-
 Data::Data(int D, int M , int A)
 {
-    if(1 <= D  && D <= 31){
-        dia = D;
-    }
-    if(1 <= M  && M <= 12){
-        mes = M;
-    }
-    if(1 <= A && A <= 32000){
-        ano = A;
-    }
+    setDia(D);
+    setMes(M);
+    setAno(A);
 }
-
 
 int Data::getDia(){return dia;}
 
@@ -62,46 +51,81 @@ int Data::getMes(){return mes;}
 
 int Data::getAno(){return ano;}
 
-bool Data::setDia(int D){
-    if(0 < D < 31){
+void Data::setDia(int D){
+    if(0 < D && D < 31){
         dia = D;
-        return 0;
-        return 0;
+    }else{
+        dia = 1;
+        cout << "Dia fora do intervalo existente" << endl;
+        cout << "Valor padrão será utilizado" << endl;
+
     }
-    return 1;
 }
 
-bool Data::setMes(int M){
-    if(0 < M < 12){
+void Data::setMes(int M){
+    if(0 < M && M < 12){
         mes = M;
-        return 0;
+    }else{
+        mes = 1;
+        cout << "Mês fora do intervalo existente" << endl;
+        cout << "Valor padrão será utilizado" << endl;
     }
-    return 1;
 }
 
-bool Data::setAno(int A){
-    if(0 < A < 32000){
+void Data::setAno(int A){
+    if(-10000 < A && A < 32000){
         ano = A;
-        return 0;
     }
-    return 1;
+}
+
+void Data::PrintDataCompleta(){
+    cout << dia << "/" << mes << "/" << ano << endl;
+}
+
+int DataTest::main()
+{
+
+
+    Data d;
+    int aux;
+
+    cout << "Digite um Dia:";
+    cin >> aux;
+    d.setDia(aux);
+    cout << "O dia armazenado é:" << d.getDia() << endl;
+
+
+    cout << "Digite um Mês:";
+    cin >> aux;
+    d.setMes(aux);
+    cout << "O mês armazenado é:" << d.getMes() << endl;
+
+    cout << "Digite um Ano:";
+    cin >> aux;
+    d.setAno(aux);
+    cout << "O ano armazenado é:" << d.getAno() << endl;
+
+    d.PrintDataCompleta();
+
+    d.avancarDia();
+
+    cout << endl;
+
+    d.PrintDataCompleta();
+
+	return 0;
 }
 
 int main()
 {
-    Data niver(1,12,1999);
+    DataTest teste;
+    teste.main();
 
-    cout << endl;
-    cout << niver.getMes()<<endl<<endl;
-    niver.avancarDia();
-    cout << niver.getDia()<<endl;
-    cout << niver.getMes()<<endl;
-    cout << niver.getAno()<<endl;
-
-
-
-
-
-
-	return 0;
 }
+
+
+
+
+
+
+
