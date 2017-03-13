@@ -10,7 +10,7 @@ class Invoice{
             string descricao; //Quando utilizar uma string, é obrigatorio colocar o namespace no escopo.
             float preco;
     public:
-           
+            //Definição dos métodos utilizados no sistema
             //Set e Get Numero
             void setNumero(int num);
             int getNumero();
