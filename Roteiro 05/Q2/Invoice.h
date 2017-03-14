@@ -28,4 +28,9 @@ class Invoice{
              //Metodo Construtor
             Invoice(int numero_ct = 0, int quantidade_ct = 0, string descricao_ct = "", float preco_ct = 0.0);
 };
+class InvoiceTest{
+        public:
+        void main();     
+};
+
 #endif //INVOICE_H

@@ -21,7 +21,12 @@ void Invoice::setNumero(int num){
 }
 
 void Invoice::setQuantidade(int qtd){
-        quantidade = qtd;
+        if(qtd > 0) //Validando o valor inserido pelo usuario
+        {
+                 quantidade = qtd;
+        }else{
+                quantidade = 0;
+        }
 }
 
 void Invoice::setDescricao(string desc){
@@ -29,20 +34,28 @@ void Invoice::setDescricao(string desc){
 }
 
 void Invoice::setPreco(float pre){
-        preco = pre;
+        if(pre > 0)//Validando o valor inserido pelo usuario
+        {
+                preco = pre;
+        }else{
+                preco = 0;
+        }
 }
-//MAIN
-int main(){
-        //Testando a implementação da classe e criando um objeto chamado fatura
-        Invoice fatura( 1, 2,"teste de string2", 20.00);
-        //Recebendo os valores do objeto fatura
-        int n_o = fatura.getNumero();
-        int q_o = fatura.getQuantidade();
-        string d_o = fatura.getDescricao();
-        float p_o = fatura.getPreco();
-        //joga na tela
-        cout << n_o << endl;
-        cout << q_o << endl;
-        cout << d_o << endl;
-        cout << p_o << endl;
+
+float Invoice::getInvoiceAmount(void){
+        return preco*quantidade;
+}       
+//MAIN DE TESTES
+void InvoiceTest::main()
+{
+        Invoice fatura(1001, 2, "Teclado", 20.00);//instancia de teste
+        cout << "FATURA" << endl;
+        cout << "Total = " << fatura.getInvoiceAmount();//exibindo o total
+}
+
+//MAIN GERAL
+int main(){ 
+        InvoiceTest faturatotal; //Criando uma instancia de teste
+        faturatotal.main(); //Acessando o metodo main da instancia fauratotal, que no caso
+                           //foi criada pela classe InvoiceTest.
 }
