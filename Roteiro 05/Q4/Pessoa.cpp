@@ -27,11 +27,16 @@ void Pessoa::setNome(string nome_h){
 }
 
 void CadastroDePessoa::main(){
-    Pessoa Joao(31, 99091542, "Joao Silva");
-    Pessoa Larissa(21, 98761025, "Larissa Almeida");
-    Pessoa Luciano(20, 98415263, "Luciano Vieira");
-    
+    Pessoa One(31, 99091542, "João Silva");
+    Pessoa Two(21, 98761025, "Larissa Almeida");
+    Pessoa Three(20, 98415263, "Luciano Vieira");
+
+    cout << "NOME" << "\t\t" << "IDADE" << "\t" << "TELEFONE" << endl;
+    cout << One.getNome() << "\t  " << One.getIdade() << "\t" << One.getTelefone() << endl;
+    cout << Two.getNome() << "\t  " << Two.getIdade() << "\t" << Two.getTelefone() << endl;
+    cout << Three.getNome() << "\t  " << Three.getIdade() << "\t" << Three.getTelefone() << endl;
 }
 int main(){
-    
+    CadastroDePessoa teste;
+    teste.main();
 }
