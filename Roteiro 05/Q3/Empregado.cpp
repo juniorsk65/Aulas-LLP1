@@ -28,18 +28,18 @@ using namespace std;
 Empregado::Empregado(string n, string s, float val){
     SetNome(n);
     SetSobrenome(s);
-    SetSalario_min(val);
+    SetSalario_Mens(val);
 }
         //~Empregado();
-void Empregado::SetSalario_min(float val) {
+void Empregado::SetSalario_Mens(float val) {
     if (val >= 0)
-        Salario_min = val;
+        Salario_Mens = val;
     else
-        Salario_min = 0;
+        Salario_Mens = 0;
 }
 
 void Empregado::Cadastro_Completo(){
-    cout<<"O nome do funcionário é: " << Nome << " " << Sobrenome << " e recebe " <<Salario_min <<" por mês.";
+    cout<<"O nome do funcionário é " << Nome << " " << Sobrenome << " e recebe " <<Salario_Mens <<" por mês." << endl;
 }
 
 int EmpregadoTest::main(){
@@ -57,6 +57,24 @@ int EmpregadoTest::main(){
     Empregado funcionario(n, s , d);
     Empregado funcionario2("João", "Pessoa" , 1585);
     funcionario.Cadastro_Completo();
+    funcionario2.Cadastro_Completo();
+
+    float valor_anual;
+
+    valor_anual = 12*funcionario.GetSalario_Mens();
+
+    float valor_anual2;
+
+    valor_anual2 = 12*funcionario2.GetSalario_Mens();
+
+    cout << "Valor anual do "<< funcionario.GetNome() <<" é igual a " << valor_anual << endl;
+    cout << "Valor anual do "<< funcionario2.GetNome() <<" é igual a " << valor_anual2 << endl;
+
+    funcionario.SetSalario_Mens(1.1*funcionario.GetSalario_Mens());
+    funcionario2.SetSalario_Mens(1.1*funcionario2.GetSalario_Mens());
+
+    funcionario.Cadastro_Completo();
+    funcionario2.Cadastro_Completo();
 }
 
 int main()

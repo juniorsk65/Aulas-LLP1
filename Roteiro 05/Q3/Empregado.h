@@ -9,8 +9,8 @@ class Empregado
     public:
         Empregado(string n, string s, float val);
         //~Empregado();
-        float GetSalario_min() { return Salario_min; }
-        void SetSalario_min(float val);
+        float GetSalario_Mens() { return Salario_Mens; }
+        void SetSalario_Mens(float val);
         string GetNome() { return Nome; }
         void SetNome(string val) { Nome = val; }
         string GetSobrenome() { return Sobrenome; }
@@ -18,7 +18,7 @@ class Empregado
         void Cadastro_Completo();
     protected:
     private:
-        float Salario_min;
+        float Salario_Mens;
         string Nome;
         string Sobrenome;
 };
