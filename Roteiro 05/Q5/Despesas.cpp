@@ -82,8 +82,6 @@ int main()
     cout<<"O total de despesas é :" << total;
 
 
-
-
     return 0;
 }
 
