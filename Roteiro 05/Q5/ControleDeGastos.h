@@ -12,9 +12,11 @@ class ControleDeGastos
         ControleDeGastos(){};
         void setDespesas(double val, string tipo);
         double calculaTotalDeDespesas();
-        bool existeDespesasDoTipo(string tipo);
-    private:
+        string existeDespesasDoTipo(string tipo);
+
         Despesas despesas[100];
+    private:
+
         int contador = 0;
 
 };

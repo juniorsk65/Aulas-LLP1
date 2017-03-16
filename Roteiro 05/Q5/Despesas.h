@@ -15,7 +15,6 @@ class Despesas
         void SetValor(double val) { valor = val; }
         string GetTipoDeGasto() { return tipoDeGasto; }
         void SetTipoDeGasto(string val) { tipoDeGasto = val; }
-    protected:
     private:
         double valor;
         string tipoDeGasto;

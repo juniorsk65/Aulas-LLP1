@@ -8,5 +8,21 @@ CXXFLAGS=-std=c++11
 Despesas: Despesas.cpp
 	$(CXX) $(CXXFLAGS) Despesas.cpp
 
+#Apaga os arquivos objetos da pasta
+limpar:
+	rm -rf *.o
+
 #Despesas: Despesas.cpp
 #	g++ -std=c++11 Despesas.cpp
+
+######################################
+#Explicação
+######################################
+#regra: dependências 
+# TAB comando  
+# TAB comando
+#
+#criar:dependências 
+# TAB comando  
+# TAB comando
+# 

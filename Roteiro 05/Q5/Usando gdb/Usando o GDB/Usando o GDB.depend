@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1489665948 source:/home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 05/Q5/Despesas.cpp
+	<iostream>
+	"Despesas.h"
+	"ControleDeGastos.h"
+
+1489663714 /home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 05/Q5/Despesas.h
+	<string>
+
+1489665250 /home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 05/Q5/ControleDeGastos.h
+	"Despesas.h"
+	<string>
+

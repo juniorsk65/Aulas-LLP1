@@ -31,7 +31,7 @@ void ControleDeGastos::setDespesas(double val, string tipo_gasto)
 
 double ControleDeGastos::calculaTotalDeDespesas(){
 
-    double total;
+    double total = 0;
     int i = 0;
 
     for(i = 0 ; i < contador; i++)
@@ -43,18 +43,18 @@ double ControleDeGastos::calculaTotalDeDespesas(){
 
 }
 
-bool ControleDeGastos::existeDespesasDoTipo(string tipo){
+string ControleDeGastos::existeDespesasDoTipo(string tipo){
     int i = 0;
 
     for(i = 0 ; i < contador; i++)
     {
-        if (tipo.compare(despesas[i].GetTipoDeGasto()) == 1)
+        if (tipo.compare(despesas[i].GetTipoDeGasto()) != 1)
         {
-            return true
+            return "True";
         }
     }
 
-    return false;
+    return "False";
 }
 
 
@@ -65,6 +65,7 @@ int main()
 
     float valor_temp;
     string tipo_gasto;
+    string tipo_desejado;
     int i = 0;
     double total;
 
@@ -78,9 +79,12 @@ int main()
         auditoria.setDespesas(valor_temp, tipo_gasto);
     }
 
-    total = auditoria.calculaTotalDeDespesas;
+    total = auditoria.calculaTotalDeDespesas();
     cout<<"O total de despesas é :" << total;
 
+    cout << "Digite qual tipo de despesa deseja saber se existe:" << endl;
+    cin >> tipo_desejado;
+    cout << "O tipo "<< tipo_desejado <<" é : " << auditoria.existeDespesasDoTipo(tipo_desejado);
 
     return 0;
 }
