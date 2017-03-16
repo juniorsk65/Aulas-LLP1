@@ -31,6 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../../ControleDeGastos.h" />
+		<Unit filename="../../Despesas.cpp" />
+		<Unit filename="../../Despesas.h" />
 		<Extensions>
 			<envvars />
 			<code_completion />

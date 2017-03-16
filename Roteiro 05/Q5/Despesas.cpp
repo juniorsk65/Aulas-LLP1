@@ -79,11 +79,13 @@ int main()
         auditoria.setDespesas(valor_temp, tipo_gasto);
     }
 
+
     total = auditoria.calculaTotalDeDespesas();
     cout<<"O total de despesas é :" << total;
 
     cout << "Digite qual tipo de despesa deseja saber se existe:" << endl;
     cin >> tipo_desejado;
+    cout << endl;
     cout << "O tipo "<< tipo_desejado <<" é : " << auditoria.existeDespesasDoTipo(tipo_desejado);
 
     return 0;
