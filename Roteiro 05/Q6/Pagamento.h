@@ -16,18 +16,21 @@ class Pagamento{
 
         void setNomeDoFuncionario(string nome);
         string getNomeDoFuncionario();
+        //Construtores
         Pagamento(){};
         Pagamento(double valor_ct, string nome_ct);  
 };
 
 class ControleDePagamento{
     private:
-        int indexer = 0;
+        int j = 0;
+        int nPagamentos = 0;
     public:
         Pagamento pagamentos[100];
         void setPg(Pagamento pg[], int n);
         double calculaTotalDePagamentos();
-
+        bool existePagamentoParaFuncionario(string nomeFuncionario);
+        void listarPagamentos();
         ControleDePagamento();
 };
 
