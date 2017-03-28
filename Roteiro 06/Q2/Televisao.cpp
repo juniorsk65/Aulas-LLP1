@@ -23,11 +23,28 @@ int Televisao::getVolume() { return volume; }
 
 void Televisao::sobeCanal()
 {
-    int c;
+    int c = 0;
 
     cout << "Digite 1 para incrementar 1" << endl;
     cout << "OU" << endl;
     cout << "Digite o Canal" << endl;
+
+    while (c <= 0 || c > 10)
+    {
+        cin >> c;
+        cout << "Digite novamente" << endl;
+        cout << "Digite maximo (0 - 10)" << endl;
+    };
+    canal = canal + c;
+}
+
+void Televisao::desceCanal()
+{
+    int c = 0;
+
+    cout << "Digite 1 para diminuir" << endl;
+    cout << "OU" << endl;
+    cout << "Digite a quantidade" << endl;
 
     while (c <= 0 || c > 10)
     {
@@ -55,21 +72,21 @@ void Televisao::aumentaVolume()
     volume = volume + v;
 }
 
-void Televisao::desceCanal()
+void Televisao::diminuiVolume()
 {
-    int c = 0;
+    int v = 0;
 
     cout << "Digite 1 para diminuir" << endl;
     cout << "OU" << endl;
     cout << "Digite a quantidade" << endl;
 
-    while (c <= 0 || c > 10)
+    while (v <= 0 || v > 10)
     {
-        cin >> c;
+        cin >> v;
         cout << "Digite novamente" << endl;
         cout << "Digite maximo (0 - 10)" << endl;
     };
-    canal = canal + c;
+    canal = canal - v;
 }
 
 int main()
