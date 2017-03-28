@@ -11,8 +11,8 @@ class Relogio {
 		int getMinutos();
 		int getSegundos();
 
-		bool setHorario();
+		bool setHorario(int h,  int m, int s);
 
 		void avancarHorario();
-}
+};
 #endif //Relogio_H
