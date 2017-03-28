@@ -1,0 +1,11 @@
+1) (a) Crie uma classe em C++ chamada Relogio para armazenar um horário, composto pelos
+seguintes atributos: hora, minuto e segundo. A classe deve representar esses
+componentes de horário e deve apresentar os métodos descritos a seguir:
+ * Um método chamado setHorario(), que deve receber os valores de hora, minuto
+e segundo como parâmetro;
+ * Métodos para recuperar os atributos da classe (getHora(), getMinuto() e
+getSegundo());
+ * Um método para avancarHorario() o horário para o próximo segundo (lembre-
+se de atualizar o minuto e a hora, quando for o caso).
+(b) Crie uma classe RelogioTeste, com um método main, que cria alguns objetos da
+classe Relogio e utiliza as suas operações (métodos).
