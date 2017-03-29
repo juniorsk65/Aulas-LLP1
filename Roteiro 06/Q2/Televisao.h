@@ -2,9 +2,11 @@
 #define TELEVISAO_H
 #include <iostream>
 
+using namespace std;
+
 class Televisao{
     private:
-        int volume, canal;
+        int volume, canal ;
     public:
         void setVolume(int vol);
         int getVolume();
@@ -18,10 +20,10 @@ class Televisao{
         void aumentaVolume();
         void diminuiVolume();
         void sobeCanal();
-        void desceCanal();        
-
-
+        void desceCanal();
+        void Volume();
+        void Canal(); 
+        void TV();
 };
-
 
 #endif // TELEVISAO_H
