@@ -1,7 +1,14 @@
 #include "MesaDeRestaurante.h"
 
-void MesaDeRestaurante::adicionaAoPedido(){
-    //PEIXE FAZ
+MesaDeRestaurante::MesaDeRestaurante(){
+
+}
+
+void MesaDeRestaurante::adicionaAoPedido(Pedido ped[], int n){
+    for(int i; i < n; i++){
+        pedido[j++] = ped[i];
+    }
+    nMesas = n;
 }
 
 void MesaDeRestaurante::zeraPedidos(){
