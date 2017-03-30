@@ -14,5 +14,9 @@ void RestauranteCaseiro::calculaTotalRestaurante(){
 
 int main()
 {
-    //PEIXE FAZ
+    RestauranteCaseiro restaurante;
+    
+    mesa[0] = 
+
+    
 }

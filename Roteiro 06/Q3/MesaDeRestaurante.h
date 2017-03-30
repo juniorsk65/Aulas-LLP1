@@ -6,14 +6,15 @@ using namespace std;
 
 class MesaDeRestaurante{
     private:
-    // PEIXE FAZ
+        int j = 0;
+        int nMesas = 0; 
     public:
     Pedido pedido[10];
 
-    void adicionaAoPedido();
+    void adicionaAoPedido(Pedido ped[], int n);
     void zeraPedidos();
     double calculaTotal(); //Individual de cada mesa
-
+    
     MesaDeRestaurante();
 };
 
