@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1490871508 source:/home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 06/Q1/q1/Relogio.cpp
+	<iostream>
+	"Relogio.h"
+
+1490870799 /home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 06/Q1/q1/Relogio.h
+
+1490872179 source:/home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 06/Q1/q1/RelogioTeste.cpp
+	<iostream>
+	"RelogioTeste.h"
+
+1490873846 /home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 06/Q1/q1/RelogioTeste.h
+	"Relogio.h"
+
+1490875668 source:/home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 06/Q1/q1/main.cpp
+	"Relogio.h"
+	"RelogioTeste.h"
+	<iostream>
+
