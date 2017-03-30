@@ -67,8 +67,8 @@ int EmpregadoTest::main(){
 
     valor_anual2 = 12*funcionario2.GetSalario_Mens();
 
-    cout << "Valor anual do "<< funcionario.GetNome() <<" é igual a " << valor_anual << endl;
-    cout << "Valor anual do "<< funcionario2.GetNome() <<" é igual a " << valor_anual2 << endl;
+    cout << "Valor anual do "<< funcionario.GetNome() <<" é igual a " << valor_anual <<"."<< endl;
+    cout << "Valor anual do "<< funcionario2.GetNome() <<" é igual a " << valor_anual2 <<"."<< endl;
 
     funcionario.SetSalario_Mens(1.1*funcionario.GetSalario_Mens());
     funcionario2.SetSalario_Mens(1.1*funcionario2.GetSalario_Mens());
