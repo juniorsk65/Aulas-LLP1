@@ -1,6 +1,6 @@
 #ifndef RESTAURANTECASEIRO_H
 #define RESTAURANTECASEIRO_H
-#include"MesaDeRestaurante.cpp"
+#include"MesaDeRestaurante.h"
 
 using namespace std;
 
