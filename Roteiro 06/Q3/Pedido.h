@@ -23,6 +23,7 @@ class Pedido{
     void setDescricao(string descri);
     string getDescricao();
 
+    Pedido();
     Pedido(int _numero, int _quantidade, double _preco, string _descricao);
 };
 

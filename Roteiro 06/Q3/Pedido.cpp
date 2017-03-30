@@ -12,8 +12,15 @@ int Pedido::getQuantidade(){return quantidade;}
 double Pedido::getPreco(){return preco;}
 string Pedido::getDescricao(){return descricao;}
 
-
-int main()
-{
-        //PEIXE FAZ
+void Pedido::setNumero(int num){
+    numero = num;
+}
+void Pedido::setQuantidade(int qtd){
+    quantidade = qtd;
+}
+void Pedido::setPreco(double prc){
+    preco = prc;
+}
+void Pedido::setDescricao(string descri){
+    descricao = descri;
 }
