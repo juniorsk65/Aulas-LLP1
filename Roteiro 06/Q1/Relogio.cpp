@@ -32,18 +32,3 @@ void Relogio::avancarHorario(){
         }
     }
 }
-
-int main(){
-    Relogio analog;
-    analog.setHorario(23, 59, 59);
-
-    cout << analog.getHoras();
-    cout << analog.getMinutos();
-    cout << analog.getSegundos() << endl;
-    analog.avancarHorario();
-    cout << analog.getHoras();
-    cout << analog.getMinutos();
-    cout << analog.getSegundos();
-
-
-}

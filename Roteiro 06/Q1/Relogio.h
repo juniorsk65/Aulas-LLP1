@@ -1,5 +1,5 @@
-#ifndef Relogio_H
-#define Relogio_H
+#ifndef RELOGIO_H
+#define RELOGIO_H
 
 class Relogio {
 	private:
@@ -15,4 +15,4 @@ class Relogio {
 
 		void avancarHorario();
 };
-#endif //Relogio_H
+#endif //RELOGIO_H
