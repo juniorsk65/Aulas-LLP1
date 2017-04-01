@@ -10,7 +10,7 @@ class RestauranteCaseiro{
     public:
     MesaDeRestaurante mesa[10];
     
-    void adicionaAoPedido();
+    void adicionaAoPedido(int n_da_mesa ,Pedido p);
     double calculaTotalRestaurante();
     RestauranteCaseiro();
 };
