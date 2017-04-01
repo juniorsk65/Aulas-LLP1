@@ -6,12 +6,14 @@ using namespace std;
 
 class MesaDeRestaurante{
     private:
-    
     public:
     Pedido pedido[10];
+    int i = 0; //IMPORTANTE: observar implementação
+               //Variavel de controle de pedidos
+    
 
     void adicionaAoPedido(Pedido ped[], int n);
-    void zeraPedidos();
+    void zeraPedidos(int n);
     double calculaTotal(); //Individual de cada mesa
     
     MesaDeRestaurante();

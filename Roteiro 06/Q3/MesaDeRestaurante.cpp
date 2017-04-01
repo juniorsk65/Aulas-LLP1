@@ -1,21 +1,37 @@
 #include "MesaDeRestaurante.h"
 
-MesaDeRestaurante::MesaDeRestaurante(){
-
-}
+MesaDeRestaurante::MesaDeRestaurante(){}
 
 void MesaDeRestaurante::adicionaAoPedido(Pedido ped[], int n){
-    pedido[0] = ped[0];
-    pedido[1] = ped[1];
+    pedido[i] = ped[n];
+    i++; 
+
+    //i é uma variavel global que controla qtd de 
+    //pedidos que foram realizados dentro da mesa
 }
 
-void MesaDeRestaurante::zeraPedidos(){
-    pedido[0].setNumero(0);
-    pedido[0].setPreco(0);
-    pedido[0].setQuantidade(0);
-    pedido[0].setDescricao("");
+void MesaDeRestaurante::zeraPedidos(int n){
+     //Zera um pedido especifico, requer parametro
+        pedido[n].setNumero(0);
+        pedido[n].setPreco(0);
+        pedido[n].setQuantidade(0);
+        pedido[n].setDescricao("");
 }
 
 double MesaDeRestaurante::calculaTotal(){
-    //PEIXE FAZ
+    //Calcula total de cada mesa
+    int p_qtd,j; //LOCAL
+    double mesa_soma, p_preco;
+        for(j = 0; j < i; j++){
+            p_preco = pedido[j].getPreco();
+            p_qtd = pedido[j].getQuantidade();
+            mesa_soma = mesa_soma + (p_preco*p_qtd);
+        }
+    return mesa_soma;
+    //IMPORTANTE
+    //Variavel i é global, utilizada para verificar
+    //quantos pedidos foram feitos pela mesa
+    //j é local, apenas para o contador
+    //p_qtd = quantidade do pedido(local)
+    //p_preco = preço do pedido(local)
 }
