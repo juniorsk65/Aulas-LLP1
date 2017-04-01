@@ -11,7 +11,7 @@ class RestauranteCaseiro{
     MesaDeRestaurante mesa[10];
     
     void adicionaAoPedido();
-    void calculaTotalRestaurante();
+    double calculaTotalRestaurante();
     RestauranteCaseiro();
 };
 

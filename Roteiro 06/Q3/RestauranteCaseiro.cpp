@@ -7,7 +7,7 @@ void RestauranteCaseiro::adicionaAoPedido(){
     //Chama o adiciona mesa da classe MesaDeRestaurante
     // para ser acrescentado um pedido
 }
-void RestauranteCaseiro::calculaTotalRestaurante(){
+double RestauranteCaseiro::calculaTotalRestaurante(){
     //Total das mesas
     //Total do restaurante
     int m_esa;
@@ -16,6 +16,8 @@ void RestauranteCaseiro::calculaTotalRestaurante(){
         total_mesa = mesa[m_esa].calculaTotal();
         caixa = caixa + total_mesa;
         }
+
+    return caixa;
 }
 
 int main()
