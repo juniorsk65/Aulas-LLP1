@@ -12,8 +12,8 @@ class MesaDeRestaurante{
                //Variavel de controle de pedidos
     
 
-    void adicionaAoPedido(Pedido ped[], int n);
-    void zeraPedidos(int n);
+    void adicionaAoPedido(Pedido ped);
+    void zeraPedidos(int index);
     double calculaTotal(); //Individual de cada mesa
     
     MesaDeRestaurante();

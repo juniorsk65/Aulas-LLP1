@@ -6,13 +6,12 @@ RestauranteCaseiro::RestauranteCaseiro(){
 void RestauranteCaseiro::adicionaAoPedido(int n_da_mesa ,Pedido p){
     //Verifica se o produto já existe na comanda
     //Se sim faça:
-    // adicione um valor no lugar certo
+    // Adicione um valor no lugar certo
     //Se não:
     // Crie um novo campo em que ficará esse produto
     int k;
 
     for(k = 0; k < 10 ;k++){
-        //if(mesa[n_da_mesa].pedido[k].getNumero == ){
         if(mesa[n_da_mesa].pedido[k].getDescricao() == p.getDescricao() && 
         mesa[n_da_mesa].pedido[k].getNumero() == p.getNumero() &&
         mesa[n_da_mesa].pedido[k].getPreco() == p.getPreco()  
@@ -20,16 +19,12 @@ void RestauranteCaseiro::adicionaAoPedido(int n_da_mesa ,Pedido p){
             
             mesa[n_da_mesa].pedido[k].setQuantidade(mesa[n_da_mesa].pedido[k].getQuantidade() + 1); 
         }else{
-            cout << "Else" << mesa[n_da_mesa].pedido[k].getDescricao();
+        //Chama o adiciona mesa da classe MesaDeRestaurante
+        //para ser acrescentado um pedido
+           mesa[n_da_mesa].adicionaAoPedido(p);
         }
 
     }
-
-
-    //preciso dizer qual a mesa irei add o pedido
-    //Chama o adiciona mesa da classe MesaDeRestaurante
-    //para ser acrescentado um pedido
-
 }
 double RestauranteCaseiro::calculaTotalRestaurante(){
     //Total das mesas
@@ -56,9 +51,9 @@ int main()
     pedi[5] = Pedido(4142, 2, 50.00, "Picanha");
 
 
-    restaurante.mesa[1].adicionaAoPedido(pedi, 5);
-    restaurante.mesa[2].adicionaAoPedido(pedi, 2);
-    restaurante.mesa[1].adicionaAoPedido(pedi, 5);
+    restaurante.mesa[1].adicionaAoPedido(pedi[5]);
+    restaurante.mesa[2].adicionaAoPedido(pedi[2]);
+    restaurante.mesa[1].adicionaAoPedido(pedi[5]);
     
     cout.precision(2);//Precisa usar o fixed antes
     cout << restaurante.mesa[1].pedido[0].getDescricao() << endl;
@@ -70,5 +65,5 @@ int main()
 
     restaurante.adicionaAoPedido(1,pedi[5]);
     cout << restaurante.calculaTotalRestaurante() << endl;
-
+    return 0;
 }

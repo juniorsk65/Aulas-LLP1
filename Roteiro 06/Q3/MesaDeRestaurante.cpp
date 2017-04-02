@@ -2,20 +2,20 @@
 
 MesaDeRestaurante::MesaDeRestaurante(){}
 
-void MesaDeRestaurante::adicionaAoPedido(Pedido ped[], int n){
-    pedido[i] = ped[n];
+void MesaDeRestaurante::adicionaAoPedido(Pedido ped){
+    pedido[i] = ped;
     i++; 
 
     //i é uma variavel global que controla qtd de 
     //pedidos que foram realizados dentro da mesa
 }
 
-void MesaDeRestaurante::zeraPedidos(int n){
+void MesaDeRestaurante::zeraPedidos(int index){
      //Zera um pedido especifico, requer parametro
-        pedido[n].setNumero(0);
-        pedido[n].setPreco(0);
-        pedido[n].setQuantidade(0);
-        pedido[n].setDescricao("");
+        pedido[index].setNumero(0);
+        pedido[index].setPreco(0);
+        pedido[index].setQuantidade(0);
+        pedido[index].setDescricao("");
 }
 
 double MesaDeRestaurante::calculaTotal(){
