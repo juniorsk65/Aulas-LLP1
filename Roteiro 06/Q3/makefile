@@ -10,4 +10,6 @@ principal: main.cpp
 	
 clear:
 	rm -rf *.o
-	
+#Quando utilizar este makefile, lembrar de setar como principal. Caso contrario o compilador não ira reconhecer as alterações!
+#Não pode usar "main:" ,pois o make reconhece que este arquivo não foi modificado e não compila. Mesmo quando alguma de suas bibliotecas
+#são modificadas.
