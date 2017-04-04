@@ -1,7 +1,7 @@
 #include "Televisao.h"
 #include "Televisao.cpp"
 
-class TelevisaoTeste:Televisao{
+class TelevisaoTeste{
     public:
         int  canal_entrada, volume_entrada;
         TelevisaoTeste();
