@@ -3,15 +3,15 @@
 MesaDeRestaurante::MesaDeRestaurante(){}
 
 void MesaDeRestaurante::adicionaAoPedido(Pedido ped){
-    pedido[i] = ped;
-    i++; 
+    pedido[nPedidos] = ped;
+    nPedidos++; 
 
     //i é uma variavel global que controla qtd de 
     //pedidos que foram realizados dentro da mesa
 }
 
 void MesaDeRestaurante::zeraPedidos(int index){
-     //Zera um pedido especifico, requer parametro
+     //Zera um pedido especifico, requer parametro do pedido
         pedido[index].setNumero(0);
         pedido[index].setPreco(0);
         pedido[index].setQuantidade(0);
@@ -22,7 +22,7 @@ double MesaDeRestaurante::calculaTotal(){
     //Calcula total de cada mesa
     int p_qtd,j; //LOCAL
     double mesa_soma, p_preco;
-        for(j = 0; j < i; j++){
+        for(j = 0; j < nPedidos; j++){
             p_preco = pedido[j].getPreco();
             p_qtd = pedido[j].getQuantidade();
             mesa_soma = mesa_soma + (p_preco*p_qtd);

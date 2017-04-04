@@ -8,7 +8,7 @@ class MesaDeRestaurante{
     private:
     public:
     Pedido pedido[10];
-    int i = 0; //IMPORTANTE: observar implementação
+    int nPedidos = 0; //IMPORTANTE: observar implementação
                //Variavel de controle de pedidos
     
 
