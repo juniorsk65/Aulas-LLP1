@@ -5,8 +5,9 @@ CXXFLAGS=-std=c++11
 #Dependências
 #DEPS = ControleDeGastos.h Despesas.h  
 
-main: main.cpp
-	$(CXX) $(CXXFLAGS) main.cpp Relogio.cpp RelogioTeste.cpp -o main
+principal: main.cpp
+	$(CXX) $(CXXFLAGS) Relogio.cpp RelogioTeste.cpp main.cpp  -o main
+	./main
 
 #Apaga os arquivos objetos da pasta
 limpar:

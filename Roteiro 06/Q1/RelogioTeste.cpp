@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Relogio.h"
+#include "RelogioTeste.h"
 
 using namespace std;
 
-int main_test(){
+int RelogioTeste::main_test(){
     Relogio wasted_years;
     wasted_years.setHorario(23, 59, 59);
 
