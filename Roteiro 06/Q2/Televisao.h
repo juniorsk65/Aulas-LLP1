@@ -17,10 +17,13 @@ class Televisao{
         //Construtor
         Televisao(int _vol, int _canal);
 
+        //Metodos de implementação, especificados pelo problema
         void aumentaVolume();
         void diminuiVolume();
         void sobeCanal();
         void desceCanal();
+
+        //Metodos auxiliares para inserção pelo usuario
         void Volume();
         void Canal(); 
         void TV();

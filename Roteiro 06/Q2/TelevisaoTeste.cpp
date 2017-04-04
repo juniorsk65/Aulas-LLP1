@@ -11,12 +11,12 @@ class TelevisaoTeste{
 int main()
 {
     int tv_entrada;
-
     Televisao TV0(0,0);
     Televisao TV1(1,1);
     Televisao TV2(1,2);
     Televisao TV3(2,1);
 
+    //APRESENTANDO STATUS
     cout << "STATUS TV1" << endl;
     cout << "Canal = " << TV1.getCanal() << endl;
     cout << "Volume = " << TV1.getVolume() << endl;
@@ -29,6 +29,7 @@ int main()
     cout << "Canal = " << TV3.getCanal() << endl;
     cout << "Volume = " << TV3.getVolume() << endl;
 
+    //Chamando métodos para alteração
     cout << "\nAlterando TV1"<< endl;
     TV1.aumentaVolume();
     TV1.sobeCanal();
@@ -36,7 +37,7 @@ int main()
     cout << "\nAlterando TV2"<< endl;
     TV2.diminuiVolume();
     TV2.desceCanal();
-    
+
     cout << "\nAlterando TV3"<< endl;
     TV3.aumentaVolume();
     TV3.sobeCanal();
