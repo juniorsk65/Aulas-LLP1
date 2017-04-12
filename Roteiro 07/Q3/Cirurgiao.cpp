@@ -1,8 +1,12 @@
 #include "Cirurgiao.h"
 
-Cirurgiao::Cirurgiao(string _nome, double _altura, double _peso, string _espec){
-    setNome(_nome);
-    setAltura(_altura);
-    setPeso(_peso);
-    setEspec(_espec);
+Cirurgiao::Cirurgiao():Medico("Jose", 1.70 , 80){
+    
+}
+
+string Cirurgiao::getEspec(){return especializacao;}
+string Cirurgiao::getProntuario(){return prontuario;}
+
+void Cirurgiao::setProntuario(string pront){
+    prontuario = pront;
 }

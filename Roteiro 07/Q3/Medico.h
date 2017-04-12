@@ -6,7 +6,7 @@
 using namespace std;
 
 class Medico{
-    private:
+    protected:
        string nome;
        double altura, peso;
     public:
@@ -18,7 +18,7 @@ class Medico{
         double getAltura();
         double getPeso();
 
-    Medico();
+    Medico(string _nome, double _altura, double _peso);
 };
 
 #endif //MEDICO_H

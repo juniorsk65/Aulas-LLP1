@@ -8,12 +8,14 @@ using namespace std;
 
 class Cirurgiao:Medico{
     private:
-       string especializacao;
+       string especializacao = "Cirurgiao";
+       string prontuario;
     public:
-      void setEspec(string espec);
       string getEspec();
-      
-    Cirurgiao(string _nome, double _altura, double _peso, string _espec);
+      string getProntuario();
+
+      void setProntuario(string pront);
+    Cirurgiao();
 };
 
 #endif //CIRURGIAO_H

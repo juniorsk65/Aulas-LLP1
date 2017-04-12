@@ -1,7 +1,9 @@
 #include "Medico.h"
 
-Medico::Medico(){
-
+Medico::Medico(string _nome, double _altura, double _peso){
+    nome = _nome;
+    altura = _altura;
+    peso = _peso;
 };
 
 void Medico::setNome(string n_ome){
