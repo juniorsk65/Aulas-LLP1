@@ -1,4 +1,5 @@
 #include "Trabalhador.h"
+
 void Trabalhador::setSalario(double s){
 	if(s >= 0)
 		salario = s;

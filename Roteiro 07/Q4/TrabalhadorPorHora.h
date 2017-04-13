@@ -1,4 +1,5 @@
 #include "Trabalhador.h"
+
 class TrabalhadorPorHora : public Trabalhador{
 	public:
 	TrabalhadorPorHora(){}

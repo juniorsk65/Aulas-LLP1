@@ -1,4 +1,5 @@
 #include "TrabalhadorPorHora.h"
+
 double TrabalhadorPorHora::calcularPagamento(int horas){
 	if(horas <= 40)
 		return salario*horas;
