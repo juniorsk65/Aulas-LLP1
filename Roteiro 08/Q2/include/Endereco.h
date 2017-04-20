@@ -22,6 +22,7 @@ class Endereco {
         void setCep(string cep_);
         void setNumero(int numero_);
 
+        Endereco();
         Endereco(string ct_logradouro, string ct_bairro, string ct_cidade, 
                 string ct_cep, int ct_numero);
 };

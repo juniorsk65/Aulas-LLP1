@@ -10,7 +10,6 @@ class Terreno:public Imovel{
     public:
         double getArea();
         void setArea(double area_);
-
         Terreno(double ct_area);
 };
 
