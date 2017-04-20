@@ -1,7 +1,7 @@
 #include "../include/Casa.h"
 
 Casa::Casa(Endereco e, int ct_numeroDePavimentos, int ct_quantidadeDeQuartos,
-        double ct_areaDoTerreno, double ct_areaConstruida)
+        double ct_areaDoTerreno, double ct_areaConstruida):Imovel(e)
 {
     setNumeroDePavimentos(ct_numeroDePavimentos);
     setQuantidadeDeQuartos(ct_quantidadeDeQuartos);
@@ -27,5 +27,16 @@ void Casa::setAreaConstruida(double _areaConstruida){
     areaConstruida = _areaConstruida;
 }
 string Casa::getDescricao(){
-    
+    std::ostringstream streamDescricao;
+
+    streamDescricao << "\t" << "ENDERECO CASA" << endl
+                    << "Logradouro " << "\t\t" << endereco.getLogradouro() << endl
+                    << "Bairro " <<  "\t\t\t" << endereco.getBairro() << endl
+                    << "Cidade " <<  "\t\t\t" << endereco.getCidade() << endl
+                    << "CEP " << "\t\t\t" << endereco.getCep() << endl
+                    << "Numero de Pavimentos " << "\t" << numeroDePavimentos << endl
+                    << "Quantidade de quartos" << "\t" <<quantidadeDeQuartos << endl
+                    << "Area do Terreno" << "\t\t" << fixed << setprecision(2) <<areaDoTerreno << endl
+                    << "Area Construida" << "\t\t" << fixed << setprecision(2) << areaConstruida << endl;
+    return streamDescricao.str();
 }
