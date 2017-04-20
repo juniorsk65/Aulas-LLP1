@@ -5,7 +5,7 @@
 #include <string>
 #include "Imovel.h"
 
-class Apartamento:Imovel{
+class Apartamento:public Imovel{
     private:
         int numeroDeVagasNaGaragem;
         double valorDoCondominio;

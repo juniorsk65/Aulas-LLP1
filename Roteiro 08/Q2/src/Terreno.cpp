@@ -14,6 +14,7 @@ string Terreno::getDescricao(){
                     << "Bairro " <<  "\t\t\t" << endereco.getBairro() << endl
                     << "Cidade " <<  "\t\t\t" << endereco.getCidade() << endl
                     << "CEP " << "\t\t\t" << endereco.getCep() << endl
+                    << "Numero " << "\t\t\t" << endereco.getNumero() << endl
                     << "Area " << "\t\t\t" << fixed << setprecision(2) << area << endl;
     return streamDescricao.str();
 }
