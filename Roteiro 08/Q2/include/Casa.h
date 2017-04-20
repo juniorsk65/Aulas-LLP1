@@ -4,7 +4,7 @@
 #include <iostream>
 #include "Imovel.h"
 
-class Casa:Imovel{
+class Casa:public Imovel{
     private:
         int numeroDePavimentos, quantidadeDeQuartos;
         double areaDoTerreno, areaConstruida;

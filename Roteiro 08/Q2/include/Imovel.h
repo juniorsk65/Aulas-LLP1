@@ -11,6 +11,8 @@ class Imovel {
         Endereco endereco;
         Endereco getEndereco();
         virtual string getDescricao()=0;
+        Imovel(Endereco e) : endereco(e){}
+    Imovel();
 };
 
 

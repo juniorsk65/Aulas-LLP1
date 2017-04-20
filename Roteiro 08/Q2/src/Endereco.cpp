@@ -1,5 +1,8 @@
 #include "../include/Endereco.h"
 
+Endereco::Endereco(){
+    
+}
 Endereco::Endereco(string ct_logradouro, string ct_bairro, string ct_cidade,
                    string ct_cep, int ct_numero)
 {

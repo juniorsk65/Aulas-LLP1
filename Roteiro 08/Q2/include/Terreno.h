@@ -10,6 +10,7 @@ class Terreno:public Imovel{
     public:
         double getArea();
         void setArea(double area_);
+        string getDescricao();
         Terreno(Endereco e, double ct_area);
 };
 

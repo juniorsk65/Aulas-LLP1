@@ -18,6 +18,7 @@ class Apartamento:Imovel{
         int getNumeroDeVagasNaGaragem();
         double getValorDoCondominio();
         string getPosicao();
+        string getDescricao();
 
         Apartamento();
         Apartamento(Endereco e,int ct_NumeroDeVagasNaGaragem, double ct_valorDoCondominio,

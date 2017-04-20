@@ -7,3 +7,6 @@ double Terreno::getArea(){return area;}
 void Terreno::setArea(double area_){
     area = area_;
 }
+string Terreno::getDescricao(){
+    
+}

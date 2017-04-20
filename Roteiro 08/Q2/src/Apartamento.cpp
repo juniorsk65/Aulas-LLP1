@@ -21,3 +21,6 @@ void Apartamento:: setValorDoCondominio(double _valorDoCondominio){
 void Apartamento::setPosicao(string _posicao){
     posicao = _posicao;
 }
+string Apartamento::getDescricao(){
+    
+}
