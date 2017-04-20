@@ -8,9 +8,9 @@ using namespace std;
 
 class Imovel {
     public:
-        virtual string getDescricao();
-        Endereco endereco = Endereco();
-        Imovel();
+        Endereco endereco;
+        Endereco getEndereco();
+        virtual string getDescricao()=0;
 };
 
 

@@ -1,6 +1,6 @@
 #include "../include/Casa.h"
 
-Casa::Casa(int ct_numeroDePavimentos, int ct_quantidadeDeQuartos,
+Casa::Casa(Endereco e, int ct_numeroDePavimentos, int ct_quantidadeDeQuartos,
         double ct_areaDoTerreno, double ct_areaConstruida)
 {
     setNumeroDePavimentos(ct_numeroDePavimentos);
@@ -25,4 +25,7 @@ void Casa::setAreaDoTerreno(double _areaDoTerreno){
 }
 void Casa::setAreaConstruida(double _areaConstruida){
     areaConstruida = _areaConstruida;
+}
+string Casa::getDescricao(){
+    
 }

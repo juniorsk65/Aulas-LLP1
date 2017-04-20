@@ -1,6 +1,6 @@
 #include "../include/Apartamento.h"
 
-Apartamento::Apartamento(int ct_numeroDeVagasNaGaragem,
+Apartamento::Apartamento(Endereco e, int ct_numeroDeVagasNaGaragem,
         double ct_valorDoCondominio, string ct_posicao)
 {
     setNumeroDeVagasNaGaragem(ct_numeroDeVagasNaGaragem);

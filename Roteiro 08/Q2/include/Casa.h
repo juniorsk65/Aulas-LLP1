@@ -18,9 +18,10 @@ class Casa:Imovel{
         int getQuantidadeDeQuartos();
         double getAreaDoTerreno();
         double getAreaConstruida();
+        string getDescricao();
 
         Casa();
-        Casa(int ct_numeroDePavimentos, int ct_quantidadeDeQuartos,
+        Casa(Endereco e, int ct_numeroDePavimentos, int ct_quantidadeDeQuartos,
          double ct_areaDoTerreno, double ct_areaConstruida);
 };
 

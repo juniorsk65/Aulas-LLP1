@@ -2,6 +2,7 @@
 #define APARTAMENTO_H
 
 #include <iostream>
+#include <string>
 #include "Imovel.h"
 
 class Apartamento:Imovel{
@@ -19,7 +20,7 @@ class Apartamento:Imovel{
         string getPosicao();
 
         Apartamento();
-        Apartamento(int ct_NumeroDeVagasNaGaragem, double ct_valorDoCondominio,
+        Apartamento(Endereco e,int ct_NumeroDeVagasNaGaragem, double ct_valorDoCondominio,
                     string ct_posicao);
 
 };

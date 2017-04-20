@@ -1,6 +1,6 @@
 #include "../include/Terreno.h"
 
-Terreno::Terreno(double ct_area){
+Terreno::Terreno(Endereco e, double ct_area){
     setArea(ct_area);
 }
 double Terreno::getArea(){return area;}
