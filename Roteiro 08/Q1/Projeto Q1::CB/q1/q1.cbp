@@ -31,6 +31,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Conta.cpp" />
+		<Unit filename="Conta.h" />
+		<Unit filename="ContaEspecial.cpp" />
+		<Unit filename="ContaEspecial.h" />
+		<Unit filename="IConta.cpp" />
+		<Unit filename="IConta.h" />
+		<Unit filename="main" />
+		<Unit filename="main.cpp" />
 		<Extensions>
 			<envvars />
 			<code_completion />

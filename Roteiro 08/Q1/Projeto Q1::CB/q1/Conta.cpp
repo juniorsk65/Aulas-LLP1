@@ -17,7 +17,7 @@ Conta::Conta(string nome, double salarioM, int numeroC, double saldo)
     SetsalarioMensal(salarioM);
     SetnumeroConta(numeroC);
     Setsaldo(saldo);
-
+    definirLimite();
 }
 
 Conta::~Conta()
