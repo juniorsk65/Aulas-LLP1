@@ -34,6 +34,7 @@ string Casa::getDescricao(){
                     << "Bairro " <<  "\t\t\t" << endereco.getBairro() << endl
                     << "Cidade " <<  "\t\t\t" << endereco.getCidade() << endl
                     << "CEP " << "\t\t\t" << endereco.getCep() << endl
+                    << "Numero " << "\t\t\t" << endereco.getNumero() << endl
                     << "Numero de Pavimentos " << "\t" << numeroDePavimentos << endl
                     << "Quantidade de quartos" << "\t" <<quantidadeDeQuartos << endl
                     << "Area do Terreno" << "\t\t" << fixed << setprecision(2) <<areaDoTerreno << endl
