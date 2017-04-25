@@ -3,7 +3,7 @@
 
 #include "Funcionario.h"
 
-class Assalariado:Funcionario{
+class Assalariado: public Funcionario{
     private:
         double salario;
     public:
@@ -12,7 +12,7 @@ class Assalariado:Funcionario{
     
         void setSalario(double _salario);
         double getSalario();
-        Assalariado( Funcionario f, double ct_salario);
+        Assalariado(double ct_salario);
 
 };
 

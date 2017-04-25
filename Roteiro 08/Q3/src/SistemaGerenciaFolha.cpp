@@ -6,15 +6,16 @@ SistemaGerenciaFolha::SistemaGerenciaFolha(){
     //CONSTRUTOR
 }
 
-void SistemaGerenciaFolha::setFuncionarios(Funcionario *func){
-    funcionarios[1] = func;
+void SistemaGerenciaFolha::setFuncionarios(Funcionario *func, int index){
+    funcionarios[index] = func;
 }
-double SistemaGerenciaFolha::consultaSalarioFuncionario(){
-    //METODO
+double SistemaGerenciaFolha::consultaSalarioFuncionario(int i){
+    return funcionarios[i]->calcularSalario();
 }
 double SistemaGerenciaFolha::calculaValorTotalFolha(){
-    //METODO
+    double caixa;
+    for(int i=0; i<3; i++){
+        caixa += funcionarios[i]->calcularSalario(); 
+    }
+    return caixa;
 }
-
-
-Funcionario *funcionario[5] = {};

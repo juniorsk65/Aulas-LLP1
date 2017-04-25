@@ -3,7 +3,7 @@
 
 #include "Funcionario.h"
 
-class Horista:Funcionario{
+class Horista: public Funcionario{
     private:
         double salarioPorHora, horasTrabalhadas;
     public:

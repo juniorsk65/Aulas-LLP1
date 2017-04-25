@@ -3,7 +3,7 @@
 
 #include "Funcionario.h"
 
-class Comissionado:Funcionario{
+class Comissionado: public Funcionario{
     private:
         double vendasSemanais, percentualComissao,salarioBase=500.00;
     public:
@@ -14,7 +14,7 @@ class Comissionado:Funcionario{
         double getVendasSemanais();
         double getPercentualComissao();
         Comissionado();
-        Comissionado(Funcionario *f, double ct_vendasSemanais, double ct_percentualComissao);
+        Comissionado(double ct_vendasSemanais, double ct_percentualComissao);
 
 };
 

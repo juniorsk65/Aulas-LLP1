@@ -1,7 +1,7 @@
 #include "../include/Assalariado.h"
 
 using namespace std;
-Assalariado::Assalariado( Funcionario f, double ct_salario):Funcionario(f){
+Assalariado::Assalariado(double ct_salario){
     setSalario(ct_salario);
 }
 

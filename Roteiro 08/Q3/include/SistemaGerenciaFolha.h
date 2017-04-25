@@ -2,6 +2,7 @@
 #define SISTEMAGERENCIAFOLHA_H
 
 #include <iostream>
+#include <iomanip>
 #include "Funcionario.h"
 
 
@@ -10,12 +11,11 @@ class SistemaGerenciaFolha{
 
     public:
         Funcionario *funcionarios[5];
-        void setFuncionarios(Funcionario *func);
+        void setFuncionarios(Funcionario *func, int index);
         double calculaValorTotalFolha();
-        double consultaSalarioFuncionario();
+        double consultaSalarioFuncionario(int i);
 
         SistemaGerenciaFolha();
-
 };
 
 
