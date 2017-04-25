@@ -12,6 +12,8 @@
 #include "Conta.h"
 #include "ContaEspecial.h"
 #include <iostream>
+#include <stdio.h>
+
 
 
 using namespace std;
