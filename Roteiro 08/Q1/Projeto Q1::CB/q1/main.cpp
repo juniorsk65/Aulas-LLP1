@@ -13,54 +13,66 @@
 #include "ContaEspecial.h"
 #include <iostream>
 
+
 using namespace std;
 
 int main(){
-    string nome = "José da Silva";
+
+    string nome = "Pedro da Silva";
     double salario = 1230.12;
     int numero = 1;
     double saldo = 1000;
+    double deposito = 50;
+    double sacar_v = 100;
 
-    Conta c;
+    Conta c(nome,salario,numero,saldo);
 
-    c = Conta(nome,salario,numero,saldo);
-    cout<<c.GetnomeCliente();
+    cout<<"O nome do cliente eh: "<<c.GetnomeCliente();
     cout<<endl;
-    cout<<c.GetsalarioMensal();
+    cout<<"O salario mensal eh: "<<c.GetsalarioMensal();
     cout<<endl;
-    cout<<c.GetnumeroConta();
+    cout<<"O Numero da conta eh: "<<c.GetnumeroConta();
     cout<<endl;
-    cout<<c.Getsaldo();
+    cout<<"O saldo eh "<<c.Getsaldo()<<" Reais.";
     cout<<endl;
-    cout<<c.Getlimite();
+    cout<<"O limite eh "<<c.Getlimite()<<" Reais.";
     cout<<endl;
     c.definirLimite();
+    cout<<"O limite eh: "<<c.Getlimite()<<" Reais.";
     cout<<endl;
-    cout<<c.Getlimite();
+    c.depositar(deposito);
+    cout<<"O saldo eh "<<c.Getsaldo()<<" Reais, apos depositar "<< deposito << " Reais";
+    cout<<endl;
+    c.sacar(sacar_v);
+    cout<<"O saldo eh "<<c.Getsaldo()<<" Reais, apos sacar "<< sacar_v << " Reais";
 
+    cout<<endl<<"\nCONTA ESPECIAL\n"<<endl;
 
     ContaEspecial cs;
 
+
     cs = ContaEspecial(nome,salario,numero,saldo);
-    cout<<cs.GetnomeCliente();
+
+    cout<<"O nome do cliente eh: "<<cs.GetnomeCliente();
     cout<<endl;
-    cout<<cs.GetsalarioMensal();
+    cout<<"O salario mensal eh: "<<cs.GetsalarioMensal();
     cout<<endl;
-    cout<<cs.GetnumeroConta();
+    cout<<"O Numero da conta eh: "<<cs.GetnumeroConta();
     cout<<endl;
-    cout<<cs.Getsaldo();
+    cout<<"O saldo eh "<<cs.Getsaldo()<<" Reais.";
     cout<<endl;
-    cout<<cs.Getlimite();
+    cout<<"O limite eh "<<cs.Getlimite()<<" Reais.";
     cout<<endl;
     cs.definirLimite();
+    cout<<"O limite eh: "<<cs.Getlimite()<<" Reais.";
     cout<<endl;
-    cout<<cs.Getlimite();
+    cs.depositar(deposito);
+    cout<<"O saldo eh "<<cs.Getsaldo()<<" Reais, apos depositar "<< deposito << " Reais";
+    cout<<endl;
+    cs.sacar(sacar_v);
+    cout<<"O saldo eh "<<cs.Getsaldo()<<" Reais, apos sacar "<< sacar_v << " Reais";
 
-
-
-
-
-
+    cout<<endl;
 
 
     return 0;

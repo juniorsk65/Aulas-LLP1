@@ -10,7 +10,8 @@
  */
 #include "ContaEspecial.h"
 
-ContaEspecial::Conta(string nome, double salarioM, int numeroC, double saldo)
+ContaEspecial::ContaEspecial(string nome, double salarioM, int numeroC, double saldo)
+:Conta(nome, salarioM, numeroC, saldo)
 {
     //ctor
 }

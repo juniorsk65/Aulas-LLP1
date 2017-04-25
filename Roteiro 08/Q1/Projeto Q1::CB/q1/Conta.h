@@ -29,6 +29,9 @@ class Conta : public IConta
         void Setlimite(double val) { limite = val; }
         void definirLimite();
 
+        void sacar(double valor);
+        void depositar(double valor);
+
     protected:
     private:
         string nomeCliente;
