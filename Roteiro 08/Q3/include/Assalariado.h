@@ -12,7 +12,7 @@ class Assalariado:Funcionario{
     
         void setSalario(double _salario);
         double getSalario();
-        Assalariado(double ct_salario, Funcionario f);
+        Assalariado( Funcionario f, double ct_salario);
 
 };
 

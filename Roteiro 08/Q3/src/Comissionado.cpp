@@ -21,4 +21,5 @@ double Comissionado::getPercentualComissao(){return percentualComissao;}
 
 double Comissionado::calcularSalario(){
     //METODO VIRTUAL
+    return salarioBase + (vendasSemanais*percentualComissao);
 }

@@ -20,4 +20,8 @@ double Horista::getHorasTrabalhadas(){return horasTrabalhadas;}
 
 double Horista::calcularSalario(){
     //METODO VIRTUAL
-}
+    if(horasTrabalhadas <= 40){
+        return (salarioPorHora*horasTrabalhadas);
+    }else
+        return (40*salarioPorHora + (horasTrabalhadas-40)*salarioPorHora*1.5);
+}   

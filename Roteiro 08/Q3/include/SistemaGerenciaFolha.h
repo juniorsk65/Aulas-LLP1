@@ -9,13 +9,12 @@ class SistemaGerenciaFolha{
     private:
 
     public:
-        Funcionario *funcionarios[2];
-        void setFuncionarios(Funcionario f);
+        Funcionario *funcionarios[5];
+        void setFuncionarios(Funcionario *func);
         double calculaValorTotalFolha();
         double consultaSalarioFuncionario();
 
         SistemaGerenciaFolha();
-        SistemaGerenciaFolha(Funcionario f);
 
 };
 
