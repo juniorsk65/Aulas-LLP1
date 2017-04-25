@@ -6,10 +6,10 @@
 
 using namespace std;
 
-
 class Conta : public IConta
 {
     public:
+        Conta(){};
         Conta(string nome, double salarioM, int numeroC, double saldo);
         virtual ~Conta();
 
