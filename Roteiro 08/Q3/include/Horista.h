@@ -15,7 +15,7 @@ class Horista: public Funcionario{
         double getSalarioPorHora();
         double getHorasTrabalhadas();
         Horista();
-        Horista(double ct_salarioPorHora, double ct_horasTrabalhadas);
+        Horista(std::string ct_nome, int ct_matricula, double ct_salarioPorHora, double ct_horasTrabalhadas);
 };
 
 

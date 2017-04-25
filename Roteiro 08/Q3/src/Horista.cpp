@@ -4,7 +4,9 @@ using namespace std;
 Horista::Horista(){
     //Construtor
 }
-Horista::Horista(double ct_salarioPorHora, double ct_horasTrabalhadas){
+Horista::Horista(string ct_nome, int ct_matricula,double ct_salarioPorHora, double ct_horasTrabalhadas)
+:Funcionario(ct_nome, ct_matricula)
+{
     setSalarioPorHora(ct_salarioPorHora);
     setHorasTrabalhadas(ct_horasTrabalhadas);
 }

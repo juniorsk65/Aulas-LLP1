@@ -12,7 +12,7 @@ class Assalariado: public Funcionario{
     
         void setSalario(double _salario);
         double getSalario();
-        Assalariado(double ct_salario);
+        Assalariado(std::string ct_nome, int ct_matricula, double ct_salario);
 
 };
 

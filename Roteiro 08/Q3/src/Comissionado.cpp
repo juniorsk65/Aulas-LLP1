@@ -5,7 +5,9 @@ using namespace std;
 Comissionado::Comissionado(){
     //CONSTRUTOR
 }
-Comissionado::Comissionado(double ct_vendasSemanais, double ct_percentualComissao){
+Comissionado::Comissionado(string ct_nome, int ct_matricula, double ct_vendasSemanais, double ct_percentualComissao)
+:Funcionario(ct_nome, ct_matricula)
+{
     setVendasSemanais(ct_vendasSemanais);
     setPercentualComissao(ct_percentualComissao);
 }

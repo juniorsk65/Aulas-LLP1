@@ -14,7 +14,7 @@ class Comissionado: public Funcionario{
         double getVendasSemanais();
         double getPercentualComissao();
         Comissionado();
-        Comissionado(double ct_vendasSemanais, double ct_percentualComissao);
+        Comissionado(std::string ct_nome, int ct_matricula,double ct_vendasSemanais, double ct_percentualComissao);
 
 };
 
