@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1492732278 source:/home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/Conta.cpp
+	"Conta.h"
+
+1492730221 /home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/Conta.h
+	"IConta.h"
+	<string>
+
+1492731751 /home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/IConta.h
+
+1492730803 source:/home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/ContaEspecial.cpp
+	"ContaEspecial.h"
+
+1492732680 /home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/ContaEspecial.h
+	"Conta.h"
+
+1492731815 source:/home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/IConta.cpp
+	"IConta.h"
+
+1492732381 source:/home/lucasnn/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/main.cpp
+	"IConta.h"
+	"Conta.h"
+	"ContaEspecial.h"
+	<iostream>
+
+1493121486 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/Conta.cpp
+	"Conta.h"
+	<iostream>
+
+1493121721 /media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/Conta.h
+	"IConta.h"
+	<string>
+
+1493119525 /media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/IConta.h
+
+1493120179 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/ContaEspecial.cpp
+	"ContaEspecial.h"
+
+1493120199 /media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/ContaEspecial.h
+	"Conta.h"
+
+1493119003 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/IConta.cpp
+	"IConta.h"
+
+1493122359 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 08/Q1/Projeto Q1::CB/q1/main.cpp
+	"IConta.h"
+	"Conta.h"
+	"ContaEspecial.h"
+	<iostream>
+
