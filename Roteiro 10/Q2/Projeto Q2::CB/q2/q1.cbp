@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -37,8 +39,13 @@
 		<Unit filename="ContaEspecial.h" />
 		<Unit filename="IConta.cpp" />
 		<Unit filename="IConta.h" />
+		<Unit filename="Roteiro 2">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/SaldoNaoDisponivelException.h" />
 		<Unit filename="main" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/SaldoNaoDisponivelException.cpp" />
 		<Extensions>
 			<envvars />
 			<code_completion />

@@ -13,7 +13,7 @@
 #include "ContaEspecial.h"
 #include <iostream>
 #include <stdio.h>
-
+#include "include/SaldoNaoDisponivelException.h"
 
 
 using namespace std;
@@ -75,6 +75,37 @@ int main(){
     cout<<"O saldo eh "<<cs.Getsaldo()<<" Reais, apos sacar "<< sacar_v << " Reais";
 
     cout<<endl;
+
+    Conta cl(nome,salario,numero,saldo);
+
+    cout<<"O nome do cliente eh: "<<cl.GetnomeCliente();
+    cout<<endl;
+    cout<<"O salario mensal eh: "<<cl.GetsalarioMensal();
+    cout<<endl;
+    cout<<"O Numero da conta eh: "<<cl.GetnumeroConta();
+    cout<<endl;
+    cout<<"O saldo eh "<<cl.Getsaldo()<<" Reais.";
+    cout<<endl;
+    cout<<"O limite eh "<<cl.Getlimite()<<" Reais.";
+    cout<<endl;
+    cl.definirLimite();
+    cout<<"O limite eh: "<<cl.Getlimite()<<" Reais.";
+    cout<<endl;
+    cl.depositar(deposito);
+    cout<<"O saldo eh "<<cl.Getsaldo()<<" Reais, apos depositar "<< deposito << " Reais";
+    cout<<endl;
+
+    try{
+        cl.sacar(sacar_v);
+    }cacht
+
+    cout<<"O saldo eh "<<cl.Getsaldo()<<" Reais, apos sacar "<< sacar_v << " Reais";
+
+
+
+
+
+
 
 
     return 0;
