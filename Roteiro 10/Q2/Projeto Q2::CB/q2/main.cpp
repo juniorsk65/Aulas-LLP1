@@ -25,7 +25,7 @@ int main(){
     int numero = 1;
     double saldo = 1000;
     double deposito = 50;
-    double sacar_v = 100;
+    double sacar_v = 10000;
 
     Conta c(nome,salario,numero,saldo);
 
@@ -97,16 +97,11 @@ int main(){
 
     try{
         cl.sacar(sacar_v);
-    }cacht
+    }catch(SaldoNaoDisponivelException& error){
+        cout<< error.what() <<endl;
+    }
 
     cout<<"O saldo eh "<<cl.Getsaldo()<<" Reais, apos sacar "<< sacar_v << " Reais";
-
-
-
-
-
-
-
 
     return 0;
 }

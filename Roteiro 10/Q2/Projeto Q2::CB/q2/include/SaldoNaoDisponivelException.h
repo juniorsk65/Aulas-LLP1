@@ -5,12 +5,12 @@
 #include <exception>
 #include <iostream>
 
-class SaldoNaoDisponivelException : public std::runtime_error
+class SaldoNaoDisponivelException : public std::exception
 {
     public:
         SaldoNaoDisponivelException();
         //~SaldoNaoDisponivelException();
-        virtual char * what(){
+        virtual const char * what(){
             return "Valor insuficiente na conta.";
         }
 

@@ -28,13 +28,17 @@ Conta::~Conta()
 }
 
 void Conta::sacar(double valor){
+    /*(b)Implemente	uma	nova	versão	do	método	sacar()	na	classe	Conta	que	deve	lançar	uma
+exceção	do	tipo	SaldoNaoDisponivelException,	quando	o	valor	a	ser	sacado	é	maior
+que	o	saldo	disponível.*/
+
     if(Getsaldo() >= valor ){
         Setsaldo(Getsaldo() - valor);
     }
     else{
         //std::cout<<"Valor insuficiente na conta."<< endl;
         //lançar uma exceção do tipo SaldoNaoDisponivelException
-        SaldoNaoDisponivelException();
+        throw SaldoNaoDisponivelException().what();
     }
 
 }
