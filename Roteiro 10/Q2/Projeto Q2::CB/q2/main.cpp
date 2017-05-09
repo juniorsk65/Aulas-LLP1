@@ -13,7 +13,7 @@
 #include "ContaEspecial.h"
 #include <iostream>
 #include <stdio.h>
-
+#include "include/SaldoNaoDisponivelException.h"
 
 
 using namespace std;
@@ -25,7 +25,7 @@ int main(){
     int numero = 1;
     double saldo = 1000;
     double deposito = 50;
-    double sacar_v = 100;
+    double sacar_v = 10000;
 
     Conta c(nome,salario,numero,saldo);
 
@@ -76,6 +76,32 @@ int main(){
 
     cout<<endl;
 
+    Conta cl(nome,salario,numero,saldo);
+
+    cout<<"O nome do cliente eh: "<<cl.GetnomeCliente();
+    cout<<endl;
+    cout<<"O salario mensal eh: "<<cl.GetsalarioMensal();
+    cout<<endl;
+    cout<<"O Numero da conta eh: "<<cl.GetnumeroConta();
+    cout<<endl;
+    cout<<"O saldo eh "<<cl.Getsaldo()<<" Reais.";
+    cout<<endl;
+    cout<<"O limite eh "<<cl.Getlimite()<<" Reais.";
+    cout<<endl;
+    cl.definirLimite();
+    cout<<"O limite eh: "<<cl.Getlimite()<<" Reais.";
+    cout<<endl;
+    cl.depositar(deposito);
+    cout<<"O saldo eh "<<cl.Getsaldo()<<" Reais, apos depositar "<< deposito << " Reais";
+    cout<<endl;
+
+    try{
+        cl.sacar(sacar_v);
+    }catch(SaldoNaoDisponivelException& error){
+        cout<< error.what() <<endl;
+    }
+
+    cout<<"O saldo eh "<<cl.Getsaldo()<<" Reais, apos sacar "<< sacar_v << " Reais";
 
     return 0;
 }
