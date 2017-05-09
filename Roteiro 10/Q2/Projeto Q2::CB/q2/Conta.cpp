@@ -10,7 +10,7 @@
  */
 #include "Conta.h"
 #include <iostream>
-#include "include/SaldoNaoDisponivelException.h"
+#include "SaldoNaoDisponivelException.h"
 
 Conta::Conta(string nome, double salarioM, int numeroC, double saldo)
 {
@@ -32,13 +32,13 @@ void Conta::sacar(double valor){
 exceção	do	tipo	SaldoNaoDisponivelException,	quando	o	valor	a	ser	sacado	é	maior
 que	o	saldo	disponível.*/
 
-    if(Getsaldo() >= valor ){
-        Setsaldo(Getsaldo() - valor);
-    }
-    else{
+    if(Getsaldo() < valor ){
         //std::cout<<"Valor insuficiente na conta."<< endl;
         //lançar uma exceção do tipo SaldoNaoDisponivelException
-        throw SaldoNaoDisponivelException().what();
+        throw SaldoNaoDisponivelException();
+    }
+    else{
+        Setsaldo(Getsaldo() - valor);
     }
 
 }

@@ -2,17 +2,18 @@
 #define SALDONAODISPONIVELEXCEPTION_H
 
 //#include <runtime_error>
-#include <exception>
+#include <stdexcept>
+//#include <exception>
 #include <iostream>
 
-class SaldoNaoDisponivelException : public std::exception
+class SaldoNaoDisponivelException : public std::runtime_error
 {
     public:
-        //SaldoNaoDisponivelException();
+        SaldoNaoDisponivelException();
         //~SaldoNaoDisponivelException();
-        const char * what(){
+        /*const char * what(){
             return "Valor insuficiente na conta.";
-        }
+        }*/
 };
 
 #endif // SALDONAODISPONIVELEXCEPTION_H
