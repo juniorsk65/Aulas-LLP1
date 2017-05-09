@@ -3,10 +3,11 @@
 
 #include <iostream>
 #include <exception>
+#include "ExceptionClass.h"
 
 class TestaValidaNumero:public std::exception {
     private:
-        int num;
+    
     public:
         TestaValidaNumero();
         void validaNumero(int num);
