@@ -8,14 +8,11 @@
 class SaldoNaoDisponivelException : public std::exception
 {
     public:
-        SaldoNaoDisponivelException();
+        //SaldoNaoDisponivelException();
         //~SaldoNaoDisponivelException();
-        virtual const char * what(){
+        const char * what(){
             return "Valor insuficiente na conta.";
         }
-
-    protected:
-    private:
 };
 
 #endif // SALDONAODISPONIVELEXCEPTION_H
