@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1493985456 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/src/Assalariado.cpp
+	"../include/Assalariado.h"
+
+1493985456 /media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/include/Assalariado.h
+	"Funcionario.h"
+
+1493122732 /media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/include/Funcionario.h
+	<iostream>
+	<string>
+
+1493985456 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/src/Comissionado.cpp
+	"../include/Comissionado.h"
+
+1493985456 /media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/include/Comissionado.h
+	"Funcionario.h"
+
+1493122732 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/src/Funcionario.cpp
+	"../include/Funcionario.h"
+
+1494333138 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/src/FuncionarioNaoExisteException.cpp
+	"../include/FuncionarioNaoExisteException.h"
+
+1494332872 /media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/include/FuncionarioNaoExisteException.h
+	<exception>
+
+1493985456 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/src/Horista.cpp
+	"../include/Horista.h"
+
+1493985456 /media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/include/Horista.h
+	"Funcionario.h"
+
+1494333205 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/src/main.cpp
+	"../include/Funcionario.h"
+	"../include/Horista.h"
+	"../include/Assalariado.h"
+	"../include/Comissionado.h"
+	"../include/SistemaGerenciaFolha.h"
+	"../include/FuncionarioNaoExisteException.h"
+
+1493985456 /media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/include/SistemaGerenciaFolha.h
+	<iostream>
+	<iomanip>
+	"Funcionario.h"
+
+1494333145 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/src/OrcamentoEstouradoException.cpp
+	"../include/OrcamentoEstouradoException.h"
+
+1494330266 /media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/include/OrcamentoEstouradoException.h
+	<stdexcept>
+
+1494332259 source:/media/aluno/79DB2A362C6B27D0/GitProjects/Aulas-LLP1/Roteiro 10/Q3/q3/src/SistemaGerenciaFolha.cpp
+	"../include/SistemaGerenciaFolha.h"
+	"../include/FuncionarioNaoExisteException.h"
+

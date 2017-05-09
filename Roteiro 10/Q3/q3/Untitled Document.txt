@@ -1,0 +1,15 @@
+3)	Considere	um	sistema	para	calcular	a	folha	de	pagamento	dos	funcionários	criado	no	roteiro
+8,	questão	3	e		apresentado	no	diagrama	abaixo.
+
+(a)	 Implemente	 as	 classes	 de	 exceção	 FuncionarioNaoExisteException	 e
+OrcamentoEstouradoException.
+
+(b)	 Considerando	 a	 classe	 SistemaGerenciaFolha,	 reescreva	 o	 método
+consultaSalarioFuncionario().	 Ele	 deve	 lançar	 uma	 exceção	 do	 tipo
+FuncionarioNaoExisteException,	 quando	 o	 funcionário	 não	 estiver	 cadastrado	 no
+sistema.
+
+(c)	 Crie	 um	 método	 main,	 que	 deve	 criar	 um	 objeto	 da	 classe	SistemaGerenciaFolha,
+cadastrar	 alguns	 objetos	 do	 tipo	 Funcionarios,	 e	 chamar	 o	 método	consultaSalarioFuncionario()	(da	classe	SistemaGerenciaFolha)	e	capturar	a
+exceção	 FuncionarioNaoExisteException.	 Ao	 capturar	 a	 exceção,	 o	 programa	 deve
+imprimir	uma	mensagem	informando	o	problema.
